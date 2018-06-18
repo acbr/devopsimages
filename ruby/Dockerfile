@@ -7,3 +7,5 @@ RUN echo "deb http://http.debian.net/debian jessie-backports main" | \
 RUN apt-get install -y -t jessie-backports openjdk-8-jdk git unzip maven
 
 RUN update-java-alternatives -s java-1.8.0-openjdk-amd64
+
+RUN gem install bundler
